@@ -2,8 +2,10 @@ import unittest
 from parse_csv import ParseCSV
 
 
-class testParseCSVTest(unittest.TestCase):
-
+class TestParseCSVTest(unittest.TestCase):
+    """
+    This is a sample test case for testing CSV Parser.
+    """
     def setUp(self):
         self.data = 'test.csv'
         self.test = ParseCSV(self.data)
