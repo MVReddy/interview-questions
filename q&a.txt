@@ -1,0 +1,436 @@
+1) What is Python? What are the benefits of using Python?
+Python is a programming language with objects, modules, threads, exceptions and automatic memory management. The benefits of pythons are that it is simple and easy, portable, extensible, build-in data structure and it is an open source.
+2)  What is PEP 8?
+PEP 8 is a coding convention, a set of recommendation, about how to write your Python code more readable.
+3) What is pickling and unpickling?
+Pickle module accepts any Python object and converts it into a string representation and dumps it into a file by using dump function, this process is called pickling.  While the process of retrieving original Python objects from the stored string representation is called unpickling.
+4) How Python is interpreted?
+Python language is an interpreted language. Python program runs directly from the source code. It converts the source code that is written by the programmer into an intermediate language, which is again translated into machine language that has to be executed.
+5) How memory is managed in Python?
+•	Python memory is managed by Python private heap space. All Python objects and data structures are located in a private heap. The programmer does not have an access to this private heap and interpreter takes care of this Python private heap.
+•	The allocation of Python heap space for Python objects is done by Python memory manager.  The core API gives access to some tools for the programmer to code.
+•	Python also have an inbuilt garbage collector, which recycle all the unused memory and frees the memory and makes it available to the heap space.
+
+6) What are the tools that help to find bugs or perform static analysis?
+PyChecker is a static analysis tool that detects the bugs in Python source code and warns about the style and complexity of the bug. Pylint is another tool that verifies whether the module meets the coding standard.
+7) What are Python decorators?
+A Python decorator is a specific change that we make in Python syntax to alter functions easily.
+8) What is the difference between list and tuple?
+
+The difference between list and tuple is that list is mutable while tuple is not. Tuple can be hashed for e.g as a key for dictionaries.
+9) How are arguments passed by value or by reference?
+Everything in Python is an object and all variables hold references to the objects. The references values are according to the functions; as a result you cannot change the value of the references. However, you can change the objects if it is mutable.
+10) What is Dict and List comprehensions are?
+They are syntax constructions to ease the creation of a Dictionary or List based on existing iterable.
+11) What are the built-in type does python provides?
+There are mutable and Immutable types of Pythons built in types Mutable built-in types
+•	List
+•	Sets
+•	Dictionaries
+Immutable built-in types
+•	Strings
+•	Tuples
+•	Numbers
+12) What is namespace in Python?
+In Python, every name introduced has a place where it lives and can be hooked for. This is known as namespace. It is like a box where a variable name is mapped to the object placed.  Whenever the variable is searched out, this box will be searched, to get corresponding object.
+13) What is lambda in Python?
+It is a single expression anonymous function often used as inline function.
+14) Why lambda forms in python does not have statements?
+A lambda form in python does not have statements as it is used to make new function object and then return them at runtime.
+15) What is pass in Python?
+Pass means, no-operation Python statement, or in other words it is a place holder in compound statement, where there should be a blank left and nothing has to be written there.
+16) In Python what are iterators?
+In Python, iterators are used to iterate a group of elements, containers like list.
+17) What is unittest in Python?
+A unit testing framework in Python is known as unittest.  It supports sharing of setups, automation testing, shutdown code for tests, aggregation of tests into collections etc.
+18) In Python what is slicing?
+A mechanism to select a range of items from sequence types like list, tuple, strings etc. is known as slicing.
+19) What are generators in Python?
+The way of implementing iterators are known as generators.  It is a normal function except that it yields expression in the function.
+20) What is docstring in Python?
+A Python documentation string is known as docstring, it is a way of documenting Python functions, modules and classes.
+21)  How can you copy an object in Python?
+To copy an object in Python, you can try copy.copy () or copy.deepcopy() for the general case. You cannot copy all objects but most of them.
+22) What is negative index in Python?
+Python sequences can be index in positive and negative numbers.   For positive index, 0 is the first index, 1 is the second index and so forth.  For negative index, (-1) is the last index and (-2) is the second last index and so forth.
+23) How you can convert a number to a string?
+In order to convert a number into a string, use the inbuilt function str().  If you want a octal or hexadecimal representation, use the inbuilt function oct() or hex().
+24) What is the difference between Xrange and range?
+Xrange returns the xrange object while range returns the list, and uses the same memory and no matter what the range size is.
+25) What is module and package in Python?
+In Python, module is the way to structure program. Each Python program file is a module, which imports other modules like objects and attributes.
+The folder of Python program is a package of modules.  A package can have modules or subfolders.
+26) Mention what are the rules for local and global variables in Python?
+Local variables: If a variable is assigned a new value anywhere within the function’s body, it’s assumed to be local.
+Global variables: Those variables that are only referenced inside a function are implicitly global.
+27) How can you share global variables across modules?
+To share global variables across modules within a single program, create a special module. Import the config module in all modules of your application. The module will be available as a global variable across modules.
+28) Explain how can you make a Python Script executable on Unix?
+To make a Python Script executable on Unix, you need to do two things,
+•	Script file’s mode must be executable and
+•	the first line must begin with # ( #!/usr/local/bin/python)
+29) Explain how to delete a file in Python?
+By using a command os.remove (filename) or os.unlink(filename)
+30) Explain how can you generate random numbers in Python?
+To generate random numbers in Python, you need to import command as
+import random
+random.random()
+This returns a random floating point number in the range [0,1)
+31) Explain how can you access a module written in Python from C?
+You can access a module written in Python from C by following method,
+Module =  =PyImport_ImportModule(“<modulename>”);
+32) Mention the use of // operator in Python?
+It is a Floor Divisionoperator , which is used for dividing two operands with the result as quotient showing only digits before the decimal point. For instance, 10//5 = 2 and 10.0//5.0 = 2.0.
+33) Mention five benefits of using Python?
+•	Python comprises of a huge standard library for most Internet platforms like Email, HTML, etc.
+•	Python does not require explicit memory management as the interpreter itself allocates the memory to new variables and free them automatically
+•	Provide easy readability due to use of square brackets
+•	Easy-to-learn for beginners
+•	Having the built-in data types saves programming time and effort from declaring variables
+34) Mention the use of the split function in Python?
+The use of the split function in Python is that it breaks a string into shorter strings using the defined separator. It gives a list of all words present in the string.
+35) Explain what is Flask & its benefits?
+Flask is a web micro framework for Python based on “Werkzeug, Jinja 2 and good intentions” BSD licensed. Werkzeug and jingja are two of its dependencies.
+Flask is part of the micro-framework. Which means it will have little to no dependencies on external libraries.  It makes the framework light while there is little dependency to update and less security bugs.
+36) Mention what is the difference between Django, Pyramid, and Flask?
+Flask is a “microframework” primarily build for a small application with simpler requirements.  In flask, you have to use external libraries.  Flask is ready to use.
+
+
+Pyramid are build for larger applications.  It provides flexibility and lets the developer use the right tools for their project. The developer can choose the database, URL structure, templating style and more. Pyramid is heavy configurable.
+Like Pyramid, Django can also used for larger applications.  It includes an ORM.
+ 
+37) Mention what is Flask-WTF and what are their features?
+Flask-WTF offers simple integration with WTForms.  Features include for Flask WTF are
+•	Integration with wtforms
+•	Secure form with csrf token
+•	Global csrf protection
+•	Internationalization integration
+•	Recaptcha supporting
+•	File upload that works with Flask Uploads
+38) Explain what is the common way for the Flask script to work?
+The common way for the flask script to work is
+•	Either it should be the import path for your application
+•	Or the path to a Python file
+ 
+39) Explain how you can access sessions in Flask?
+A session basically allows you to remember information from one request to another.  In a flask, it uses a signed cookie so the user can look at the session contents and modify. The user can modify the session if only it has the secret key Flask.secret_key.
+40) Is Flask an MVC model and if yes give an example showing MVC pattern for your application?
+Basically, Flask is a minimalistic framework which behaves same as MVC framework. So MVC is a perfect fit for Flask, and the pattern for MVC we will consider for the following example
+from flask import Flask
+app = Flask(_name_)
+@app.route(“/”)
+Def hello():
+return “Hello World”
+app.run(debug = True)
+In this code your,
+•	Configuration part will be
+from flask import Flask
+app = Flask(_name_)
+•	View part will be
+@app.route(“/”)
+Def hello():
+return “Hello World”
+•	While you model or main part will be
+app.run(debug = True)
+41) Explain database connection in Python Flask?
+Flask supports database powered application (RDBS). Such system requires creating a schema, which requires piping the shema.sql file into a sqlite3 command.  So you need to install sqlite3 command in order to create or initiate the database in Flask.
+Flask allows to request database in three ways
+•	before_request() : They are called before a request and pass no arguments
+•	after_request() : They are called after a request and pass the response that will be sent to the client
+•	teardown_request(): They are called in situation when exception is raised, and response are not guaranteed. They are called after the response been constructed.  They are not allowed to modify the request, and their values are ignored.
+42) You are having multiple Memcache servers running Python, in which one of the memcacher server fails, and it has your data, will it ever try to get key data from that one failed server?
+The data in the failed server won’t get removed, but there is a provision for auto-failure, which you can configure for multiple nodes. Fail-over can be triggered during any kind of socket or Memcached server level errors and not during normal client errors like adding an existing key, etc.
+43) Explain how you can minimize the Memcached server outages in your Python Development?
+•  When one instance fails, several of them goes down, this will put larger load on the database server when lost data is reloaded as client make a request. To avoid this, if your code has been written to minimize cache stampedes then it will leave a minimal impact
+•  Another way is to bring up an instance of Memcached on a new machine using the lost machines IP address
+•  Code is another option to minimize server outages as it gives you the liberty to change the Memcached server list with minimal work
+•  Setting timeout value is another option that some Memcached clients implement for Memcached server outage. When your Memcached server goes down, the client will keep trying to send a request till the time-out limit is reached
+44) Explain what is Dogpile effect? How can you prevent this effect?
+Dogpile effect is referred to the event when cache expires, and websites are hit by the multiple requests made by the client at the same time. This effect can be prevented by using semaphore lock. In this system when value expires, first process acquires the lock and starts generating new value.
+45) Explain how Memcached should not be used in your Python project?
+•  Memcached common misuse is to use it as a data store, and not as a cache
+•  Never use Memcached as the only source of the information you need to run your application. Data should always be available through another source as well
+•  Memcached is just a key or value store and cannot perform query over the data or iterate over the contents to extract information
+•  Memcached does not offer any form of security either in encryption or authentication
+
+
+
+
+1. Compare Java & Python
+Criteria
+Java
+Python
+Ease of use
+Good
+Very Good
+Speed of coding
+Average
+Excellent
+Data types
+Static typed
+Dynamically typed
+Data Science & machine learning applications
+Average
+Very Good
+2. How are the functions help() and dir() different?
+These are the two functions that are accessible from the Python Interpreter. These two functions are used for viewing a consolidated dump of built-in functions.
+help() - it will display the documentation string. It is used to see the help related to modules, keywords, attributes, etc.
+▪
+To view the help related to string datatype, just execute a statement help(str) – it will display the documentation for 'str, module.
+◦ Eg: >>>help(str) or
+>>>help() - it will open the prompt for help as help>
+▪
+ to view the help for a module, help> module module name
+Inorder to view the documentation of 'str' at the help>, type help>modules str
+▪
+to view the help for a keyword, topics, you just need to type, help> “keywords python-
+keyword” and “topics list”
+▪
+ dir() - will display the defined symbols.
+ Eg: >>>dir(str) – will only display the defined symbols.
+3. Which command do you use to exit help window or help command prompt?
+quit
+When you type quit at the help’s command prompt, python shell prompt will appear by closing the help window automatically.
+
+4. Does the functions help() and dir() list the names of all the built_in functions and variables? If no, how would you list them?
+No. Built-in functions such as max(), min(), filter(), map(), etc is not apparent immediately as they are
+available as part of standard module.To view them, we can pass the module ” builtins ” as an argument to “dir()”. It will display the
+built-in functions, exceptions, and other objects as a list.>>>dir(__builtins )
+[‘ArithmeticError’, ‘AssertionError’, ‘AttributeError’, ……… ]
+5. Explain how Python does Compile-time and Run-time code checking?
+Python performs some amount of compile-time checking, but most of the checks such as type, name, etc are postponed until code execution. Consequently, if the Python code references a user -defined function that does not exist, the code will compile successfully. In fact, the code will fail with an exception only when the code execution path references the function which does not exists.
+6.Whenever Python exists Why does all the memory is not de-allocated / freed when Python exits?
+Whenever Python exits, especially those python modules which are having circular references to other objects or the objects that are referenced from the global namespaces are not always de – allocated/freed/uncollectable.
+It is impossible to deallocate those portions of memory that are reserved by the C library.
+On exit, because of having its own efficient clean up mechanism, Python would try to deallocate/
+destroy every object. 
+7. Explain Python’s zip() function.?
+zip() function- it will take multiple lists say list1, list2, etc and transform them into a single list of tuples by taking the corresponding elements of the lists that are passed as parameters. Eg:
+list1 = ['A',
+'B','C'] and list2 = [10,20,30].
+zip(list1, list2) # results in a list of tuples say [('A',10),('B',20),('C',30)]
+whenever the given lists are of different lengths, zip stops generating tuples when the first list ends.
+8. Explain Python’s pass by references Vs pass by value . (or) Explain about Python’s parameter passing mechanism?
+In Python, by default, all the parameters (arguments) are passed “by reference” to the functions. Thus, if you change the value of the parameter within a function, the change is reflected in the calling function.We can even observe the pass “by value” kind of a behaviour whenever we pass the arguments to functions that are of type say numbers, strings, tuples. This is because of the immutable nature of them.
+9. As Everything in Python is an Object, Explain the characteristics of Python’s Objects.
+• As Python’s Objects are instances of classes, they are created at the time of instantiation. Eg: object-name = class-name(arguments)
+• one or more variables can reference the same object in Python
+• Every object holds unique id and it can be obtained by using id() method. Eg: id(obj-name) will return unique id of the given object.
+every object can be either mutable or immutable based on the type of data they hold.
+• Whenever an object is not being used in the code, it gets destroyed automatically garbage collected or destroyed
+• contents of objects can be converted into string representation using a method
+Download python Interview questions asked by top MNCs in 2017 ?
+Top of Form
+Bottom of Form
+10. Explain how to overload constructors or methods in Python.
+Python’s constructor – _init__ () is a first method of a class. Whenever we try to instantiate a object __init__() is automatically invoked by python to initialize members of an object.
+11. Which statement of Python is used whenever a statement is required syntactically but the program needs no action?
+Pass – is no-operation / action statement in Python
+If we want to load a module or open a file, and even if the requested module/file does not exist, we want to continue with other tasks. In such a scenario, use try-except block with pass statement in the except block.
+Eg:
+ try:import mymodulemyfile = open(“C:\myfile.csv”)except:pass
+12.What is Web Scraping? How do you achieve it in Python?
+Web Scrapping is a way of extracting the large amounts of information which is available on the web sites and saving it onto the local machine or onto the database tables.
+In order to scrap the web:load the web page which is interesting to you. To load the web page, use “requests” module.
+parse HTML from the web page to find the interesting information.Python has few modules for scraping the web. They are urllib2, scrapy, pyquery, BeautifulSoap, etc.
+13. What is a Python module?
+A module is a Python script that generally contains import statements, functions, classes and variable definitions, and Python runnable code and it “lives” file with a ‘.py’ extension. zip files and DLL files can also be modules.Inside the module, you can refer to the module name as a string that is stored in the global variable name .
+A module can be imported by other modules in one of the two ways. They are
+1. import
+2. from module-name import or
+14. Name the File-related modules in Python?
+Python provides libraries / modules with functions that enable you to manipulate text files and binary files on file system. Using them you can create files, update their contents, copy, and delete files. The libraries are : os, os.path, and shutil.
+Here, os and os.path – modules include functions for accessing the filesystem
+shutil – module enables you to copy and delete the files.
+15.Explain the use “with” in python?
+In python generally “with” statement is used to open a file, process the data present in the file, and also to close the file without calling a close() method. “with” statement makes the exception handling simpler by providing cleanup activities.
+General form of with:
+with open(“file name”, “mode”) as file-var:
+processing statements
+note: no need to close the file by calling close() upon file-var.close()
+16. Explain all the file processing modes supported by Python ?
+Python allows you to open files in one of the three modes. They are:
+read-only mode, write-only mode, read-write mode, and append mode by specifying the flags “r”, “w”, “rw”, “a” respectively.
+A text file can be opened in any one of the above said modes by specifying the option “t” along with
+“r”, “w”, “rw”, and “a”, so that the preceding modes become “rt”, “wt”, “rwt”, and “at”.A binary file can be opened in any one of the above said modes by specifying the option “b” along with “r”, “w”, “rw”, and “a” so that the preceding modes become “rb”, “wb”, “rwb”, “ab”.
+17. Explain how to redirect the output of a python script from standout(ie., monitor) on to a file ?
+They are two possible ways of redirecting the output from standout to a file.
+1. Open an output file in “write” mode and the print the contents in to that file, using sys.stdout attribute.
+import sys
+filename = “outputfile” sys.stdout = open() print “testing”
+2. you can create a python script say .py file with the contents, say print “testing” and then redirect it to the output file while executing it at the command prompt.
+Eg: redirect_output.py has the following code:
+print “Testing”
+execution: python redirect_output.py > outputfile.
+18. Explain the shortest way to open a text file and display its contents.?
+The shortest way to open a text file is by using “with” command as follows:
+with open("file-name", "r") as fp:
+fileData = fp.read()
+#to print the contents of the file print(fileData)
+19. How do you create a dictionary which can preserve the order of pairs?
+We know that regular Python dictionaries iterate over <key, value> pairs in an arbitrary order, hence they do not preserve the insertion order of <key, value> pairs.
+Python 2.7. introduced a new “OrderDict” class in the “collections” module and it provides the same interface like the general dictionaries but it traverse through keys and values in an ordered manner depending on when a key was first inserted.
+Eg:
+from collections import OrderedDict
+d = OrderDict([('Company-id':1),('Company-Name':'Intellipaat')])
+d.items() # displays the output as: [('Company-id':1),('Company-Name':'Intellipaat')]
+20. When does a dictionary is used instead of a list?
+Dictionaries – are best suited when the data is labelled, i.e., the data is a record with field names.
+lists – are better option to store collections of un-labelled items say all the files and sub directories in a folder.
+Generally Search operation on dictionary object is faster than searching a list object.
+21. What is the use of enumerate() in Python?
+Using enumerate() function you can iterate through the sequence and retrieve the index position and its corresponding value at the same time.
+>>> for i,v in enumerate([‘Python’,’Java’,’C++’]):
+print(i,v)
+0 Python
+1 Java
+2 C++
+22. How many kinds of sequences are supported by Python? What are they?
+Python supports 7 sequence types. They are str, list, tuple, unicode, bytearray, xrange, and buffer. where xrange is deprecated in python 3.5.X.
+23. How do you perform pattern matching in Python? Explain
+Regular Expressions/REs/ regexes enable us to specify expressions that can match specific “parts” of a given string. For instance, we can define a regular expression to match a single character or a digit, a telephone number, or an email address, etc.The Python’s “re” module provides regular expression patterns and was introduce from later versions of Python 2.5. “re” module is providing methods for search text strings, or replacing text strings along with methods for splitting text strings based on the pattern defined.
+24. Name few methods for matching and searching the occurrences of a pattern in a given text String ?
+There are 4 different methods in “re” module to perform pattern matching. They are:
+match() – matches the pattern only to the beginning of the String. search() – scan the string and look for a location the pattern matches findall() – finds all the occurrences of match and return them as a list
+finditer() – finds all the occurrences of match and return them as an iterator.
+25. Explain split(), sub(), subn() methods of “re” module in Python.
+To modify the strings, Python’s “re” module is providing 3 methods. They are:
+split() – uses a regex pattern to “split” a given string into a list.
+sub() – finds all substrings where the regex pattern matches and then replace them with a different string
+subn() – it is similar to sub() and also returns the new string along with the no. of
+replacements.
+26. How to display the contents of text file in reverse order?
+1. convert the given file into a list.
+2. reverse the list by using reversed()
+Eg: for line in reversed(list(open(“file-name”,”r”))):
+print(line)
+27. What is JSON? How would convert JSON data into Python data?
+JSON – stands for JavaScript Object Notation. It is a popular data format for storing data in NoSQL
+databases. Generally JSON is built on 2 structures.
+1. A collection of <name, value> pairs.
+2. An ordered list of values.
+As Python supports JSON parsers, JSON-based data is actually represented as a dictionary in Python. You can convert json data into python using load() of json module.
+28. Name few Python modules for Statistical, Numerical and scientific computations ?
+numPy – this module provides an array/matrix type, and it is useful for doing computations on arrays. scipy – this module provides methods for doing numeric integrals, solving differential equations, etc pylab – is a module for generating and saving plots
+matplotlib – used for managing data and generating plots.
+29. What is TkInter?
+TkInter is Python library. It is a toolkit for GUI development. It provides support for various GUI tools or widgets (such as buttons, labels, text boxes, radio buttons, etc) that are used in GUI applications. The common attributes of them include Dimensions, Colors, Fonts, Cursors, etc.
+30. Name and explain the three magic methods of Python that are used in the construction and initialization of custom Objects.
+The 3 magic methods of Python that are used in the construction and initialization of custom Objects are: init__, new , and del__.
+new – this method can be considered as a “constructor”. It is invoked to create an instance of a class with the statement say, myObj = MyClass()
+init__ — It is an “initializer”/ “constructor” method. It is invoked whenever any arguments are passed at the time of creating an object. myObj = MyClass(‘Pizza’,25)
+del- this method is a “destructor” of the class. Whenever an object is deleted,
+invocation of del__ takes place and it defines behaviour during the garbage collection. Note: new , del are rarely used explicitly.
+31.Is Python object oriented? what is object oriented programming?
+Yes. Python is Object Oriented Programming language. OOP is the programming paradigm based on classes and instances of those classes called objects. The features of OOP are:
+Encapsulation, Data Abstraction, Inheritance, Polymorphism.
+32.What is a Class? How do you create it in Python?
+A class is a blue print/ template of code /collection of objects that has same set of attributes and behaviour. To create a class use the keyword class followed by class name beginning with an uppercase letter. For example, a person belongs to class called Person class and can have the attributes (say first-name and last-name) and behaviours / methods (say showFullName()). A Person class can be defined as:
+class Person():
+#method
+def inputName(self,fname,lname): self.fname=fname self.lastname=lastname
+#method
+def showFullName() (self):
+print(self.fname+" "+self.lname)person1 = Person() #object instantiation person1.inputName("Ratan","Tata") #calling a method inputName person1. showFullName() #calling a method showFullName()
+Note: whenever you define a method inside a class, the first argument to the method must be self (where self – is a pointer to the class instance). self must be passed as an argument to the method, though the method does not take any arguments.
+33.What are Exception Handling? How do you achieve it in Python?
+Exception Handling prevents the codes and scripts from breaking on receipt of an error at run -time might be at the time doing I/O, due to syntax errors, data types doesn’t match. Generally it can be used for handling user inputs.
+The keywords that are used to handle exceptions in Python are:
+try – it will try to execute the code that belongs to it. May be it used anywhere that keyboard input is required.
+except – catches all errors or can catch a specific error. It is used after the try block.x = 10 + ‘Python’ #TypeError: unsupported operand type(s) …. try:
+x = 10 + ‘Python’
+except:
+print(“incompatible operand types to perform sum”)
+raise – force an error to occur
+o raise TypeError(“dissimilar data types”)
+finally – it is an optional clause and in this block cleanup code is written here following “try” and “except”.
+34.Explain Inheritance in Python with an example.
+Inheritance allows One class to gain all the members(say attributes and methods) of another class. Inheritance provides code reusability, makes it easier to create and maintain an application. They are different types of inheritance supported by Python. They are: single, multi-level, hierarchical and multiple inheritance. The class from which we are inheriting is called super-class and the class that is inherited is called a derived / child class.
+Single Inheritance – where a derived class acquires the members of a single super class.
+multi-level inheritance – a derived class d1 in inherited from base class base1, and d2 is inherited from base2.
+hierarchical inheritance – from one base class you can inherit any number of child classes
+multiple inheritance – a derived class is inherited from more than one base class.
+ex:
+class ParentClass:
+v1 = "from ParentClass - v1"
+v2 = "from ParentClass - v2"class ChildClass(ParentClass):
+passc = ChildClass() print(c.v1) print(c.v2)
+35.What is multithreading? Give an example.
+It means running several different programs at the same time concurrently by invoking multiple threads. Multiple threads within a process refer the data space with main thread and they can communicate with each other to share information more easily.Threads are light-weight processes and have less memory overhead. Threads can be used just for quick task like calculating results and also running other processes in the background while the main program is running.
+36.How instance variables are different from class variables?
+Instance variables: are the variables in an object that have values that are local to that object. Two objects of the same class maintain distinct values for their variables. These variables are accessed with “object-name.instancevariable-name”.
+class variables: these are the variables of class. All the objects of the same class will share value of “Class variables. They are accessed with their class name alone as “class- name.classvariable-name”. If you change the value of a class variable in one object, its new value is visible among all other objects of the same class. In the Java world, a variable that is declared as static is a class variable.
+37.Explain different ways to trigger / raise exceptions in your python script ?
+The following are the two possible ways by which you can trigger an exception in your Python script. They are:
+1. raise — it is used to manually raise an exception general-form:
+raise exception-name (“message to be conveyed”)
+Eg: >>> voting_age = 15
+>>> if voting_age < 18: raise ValueError(“voting age should be atleast 18 and above”) output: ValueError: voting age should be atleast 18 and above 2. assert statement assert statements are used to tell your program to test that condition attached to assert keyword, and trigger an exception whenever the condition becomes false. Eg: >>> a = -10
+>>> assert a > 0 #to raise an exception whenever a is a negative number output: AssertionError
+Another way of raising and exception can be done by making a programming mistake, but that’s not
+usually a good way of triggering an exception.
+38.How is Inheritance and Overriding methods are related?
+If class A is a sub class of class B, then everything in B is accessible in /by class A. In addition, class A can define methods that are unavailable in B, and also it is able to override methods in B. For Instance, If class B and class A both contain a method called func(), then func() in class B can override func() in class A. Similarly, a method of class A can call another method defined in A that can invoke a method of B that overrides it.
+39.Which methods of Python are used to determine the type of instance and inheritance?
+Python has 2 built-in functions that work with inheritance:
+isinstance() – this method checks the type of instance.
+o for eg, isinstance(myObj, int) – returns True only when “myObj. class ” is “int”.
+issubclass() – this method checks class inheritance
+o for eg: issubclass(bool, int) – returns True because “bool” is a subclass of “int”.
+o issubclass(unicode, str) – returns False because “unicode” is not a subclass of “str”.
+40.In the case of Multiple inheritance, if a child class C is derived from two base classes say A and B as:
+class C(A, B):
+—
+which parent class’s method will be invoked by the interpreter whenever object of class C calls a method func() that is existing in both the parent classes say A and B and does not exist in class C as “c1.func()”?
+since class C does not contain the definition of the method func(), they Python searches for the func() in parent classes. Since the search is performed in a left-to-right fashion, Python executes the method func() present in class A and not the func() method in B.
+41.Does Python supports interfaces like in Java? Discuss.
+Python does not provide interfaces like in Java. Abstract Base Class (ABC) and its feature are provided by the Python’s “abc” module. Abstract Base Class is a mechanism for specifying what methods must be implemented by its implementation subclasses. The use of ABC’c provides a sort of “understanding” about methods and their expected behaviour. This module was made available from Python 2.7 version onwards.
+42.What are Accessors, mutators, @property?
+Accessors and mutators are often called getters and setters in languages like “Java”. For example, if x is a property of a user-defined class, then the class would have methods called setX() and getX(). Python has an @property “decorator” that allows you to ad getters and setters in order to access the attribute of the class.
+43.Differentiate between “*.py” file nad “*.pyc” file?
+Both .py and .pyc files holds the byte code. “.pyc” is a compiled version of Python file. This file is automatically generated by Python to improve performance. The .pyc file is having byte code which is platform independent and can be executed on any operating system that supports .pyc format.
+Note: there is no difference in speed when program is read from .pyc or .py file; the only difference is the load time.
+44.How to retrieve data from a table in MySQL database through Python code? Explain.
+1. import MySQLdb module as : import MySQLdb
+2. establish a connection to the database.
+db = MySQLdb.connect(“host”=”local host”, “database-user”=”user-name”, “password”=”password”, “database-name”=”database”)
+3. initialize the cursor variable upon the established connection: c1 = db.cursor()
+4. retrieve the information by defining a required query string. s = “Select * from dept”
+5. fetch the data using fetch() methods and print it. data = c1.fetch(s)
+6. close the database connection. db.close()
+45.Explain about ODBC and Python ?
+ODBC (“Open Database Connectivity) API standard allows the connections with any database that supports the interface, such as PostgreSQL database or Microsoft Access in a transparent manner . There are 3 ODBC modules for Python:
+1. PythonWin ODBC module – limited development
+2. mxODBC – commercial product
+3. pyodbc – it is an open source Python package.
+46.How would you define a protected member in a Python class?
+All the members of a class in Python are public by default. You don’t need to define an access specifier for members of class. By adding ‘_’ as a prefix to the member of a class, by convetion you are telling others please don’t this object, if you are not a subclass the respective class.
+Eg: class Person:
+empid = None
+_salary = None #salary is a protected member & it can accessible by the subclasses of Person
+….
+47.How do you remove duplicates from a list?
+a. sort the list
+b. scan the list from the end.
+c. while scanning from right-to-left, delete all the duplicate elements from the list
+48.Differentiate between append() and extend() methods. ?
+Both append() and extend() methods are the methods of list. These methods a re used to add the elements at the end of the list.
+append(element) – adds the given element at the end of the list which has called this method.
+extend(another-list) – adds the elements of another-list at the end of the list which is called the extend method.
+49.Name few Python Web Frameworks for developing web applications?
+There are various web frameworks provided by Python. They are
+web2py – it is the simplest of all the web frameworks used for developing web applications.
+cherryPy – it is a Python-based Object oriented Web framework.
+Flask – it is a Python-based micro-framework for designing and developing web applications.
+50.How do you check the file existence and their types in Python?
+os.path.exists() – use this method to check for the existence of a file. It returns True if the file exists, false otherwise. Eg: import os; os.path.exists(‘/etc/hosts’)
+os.path.isfile() – this method is used to check whether the give path references a file or not. It returns True if the path references to a file, else it returns false. Eg: import os; os.path.isfile(‘/etc/hosts’)
+os.path.isdir() – this method is used to check whether the give path references a directory or not. It returns True if the path references to a directory, else it returns false. Eg: import os; os.path.isfile(‘/etc/hosts’)
+os.path.getsize() – returns the size of the given file
+os.path.getmtime() – returns the timestamp of the given path.
+51.Name few methods that are used to implement Functionally Oriented Programming in Python?
+Python supports methods (called iterators in Python3), such as filter(), map(), and reduce(), that are very useful when you need to iterate over the items in a list, create a dictionary, or extract a subset of a list.
+filter() – enables you to extract a subset of values based on conditional logic.
+map() – it is a built-in function that applies the function to each item in an iterable.
+reduce() – repeatedly performs a pair-wise reduction on a sequence until a single value is computed.
+
